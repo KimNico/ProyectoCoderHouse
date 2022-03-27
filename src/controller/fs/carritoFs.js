@@ -1,5 +1,5 @@
 let fs = require("fs");
-const ProductoController = require("../fs/productoFs");
+const ProductoController = require("./productoFs");
 let product = new ProductoController();
 
 class CarritoController{
