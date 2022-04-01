@@ -81,4 +81,4 @@ class ProductoController{
 
 }
 
-module.exports = ProductoController;
+module.exports = new ProductoController();

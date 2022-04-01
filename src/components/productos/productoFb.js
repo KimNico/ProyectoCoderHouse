@@ -40,7 +40,7 @@ class ProductosFb{
       this.productos = productos;  
     }
 
-    async create(){
+    async createProductos(){
        try {
         let productos = firebaseDB.collection(this.table)
         for (const prod of this.productos) {
@@ -111,3 +111,5 @@ class ProductosFb{
 
     }
 }
+
+module.exports = new ProductosFb();

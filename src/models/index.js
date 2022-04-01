@@ -9,13 +9,17 @@ class ProductosDao{
                 this.DAO = new ProductosDaoMongo()
                 break;
              case 'firebase':
-                    this.DAO = new ProductosDaoMongo()
-                    break;
+                this.DAO = new ProductosDaoMongo()
+                break;
              case 'file':
-                        this.DAO = new ProductosDaoMongo()
-                        break;
+                this.DAO = new ProductosDaoMongo()
+                break;
             default:
                 break;
         }
     }
 }
+
+
+
+module.exports = new ProductosDao()

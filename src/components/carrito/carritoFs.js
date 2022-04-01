@@ -1,5 +1,7 @@
 let fs = require("fs");
-const ProductoController = require("./productoFs");
+const ProductoController = require("../fs/productoFs");
+
+
 let product = new ProductoController();
 
 class CarritoController{
@@ -73,4 +75,4 @@ class CarritoController{
     }
 }
 
-module.exports = CarritoController;
+module.exports = new CarritoController();
