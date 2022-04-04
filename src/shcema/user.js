@@ -34,4 +34,4 @@ let userSchema = mongoose.Schema({
         required: true
     },
 })
-exports.User = mongoose.model('User', userSchema) 
+exports.User = mongoose.model('UserSchema', userSchema) 
