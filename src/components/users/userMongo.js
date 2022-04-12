@@ -1,4 +1,5 @@
-let {UserSchema} = require("../../shcema/user")
+let mongoose = require("../../config/dbs/mongo")
+let UserSchema = require("../../shcema/user")
 let bcrypt = require("bcryptjs")
 
 class User {
@@ -44,6 +45,10 @@ class User {
             console.log(error)
         }
     }
+    async deleteUser(req,res,next){
+        UserSchema.find
+    }
+
 }
 
 module.exports = new User();
